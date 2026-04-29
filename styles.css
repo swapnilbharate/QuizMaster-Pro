@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #b3cde0, #decbe4);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+.quiz-container, .login-container {
+  background: #f3e5f5; /* soft lavender */
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #4527a0;
+  font-size: 28px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #4a148c;
+  font-size: 22px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #b39ddb;
+  border-radius: 10px;
+  background-color: #ede7f6;
+  color: #4a148c;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #7e57c2;
+  outline: none;
+  box-shadow: 0 0 6px #7e57c280;
+}
+
+button {
+  padding: 14px 22px;
+  margin-top: 10px;
+  background-color: #7c4dff;
+  border: none;
+  color: #fffde7;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #651fff;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  color: #212121;
+}
+
+/* Even-Odd Coloring */
+.btn-container .btn:nth-child(odd) {
+  background-color: #e1bee7;
+}
+
+.btn-container .btn:nth-child(even) {
+  background-color: #b2ebf2; 
+}
+
+.btn:hover {
+  background-color: #ce93d8; 
+}
+
+.btn.correct {
+  background-color: #00c853 !important;
+  color: #ffffff;
+}
+
+.btn.wrong {
+  background-color: #d50000 !important;
+  color: #ffffff;
+}
+
+.quiz-footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4a148c;
+  font-weight: 500;
+  font-size: 16px;
+}
